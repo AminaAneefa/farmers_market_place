@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
+import '/Users/macbookair/Organic-Store/src/Components/Testimonials Section/my.png';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -59,7 +60,7 @@ function TestimonialsCarousel() {
             top ={'20px'}
             left={'35%'}
             >
-                <Image boxSize={"100px"} src='https://orgik-theme.myshopify.com/cdn/shop/files/testimonial_image_01_200x200.png?v=1639813157' />
+                <Image boxSize={"100px"} src= 'my.png' />
             </VStack>
 
             
@@ -78,7 +79,7 @@ function TestimonialsCarousel() {
                     fontWeight={"700"}
                     letterSpacing={'2px'}
                     color={'#5EA98B'}
-                    >Amy Amrou</Text>
+                    >Abhishek</Text>
 
                     <Text 
                     fontWeight={"600"}
@@ -91,7 +92,7 @@ function TestimonialsCarousel() {
                     letterSpacing={'1px'}
 
                     >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quisquam qui nesciunt.
+                  The produce I've bought here is always so fresh and flavorful, far better than anything I find at the grocery store!
                     </Text>
 
                 </VStack>
@@ -120,7 +121,7 @@ function TestimonialsCarousel() {
             top ={'20px'}
             left={'35%'}
             >
-                <Image boxSize={"100px"} src='https://orgik-theme.myshopify.com/cdn/shop/files/testimonial_image_03_200x200.png?v=1639813207' />
+                <Image boxSize={"100px"} src='https://freeimage.host/i/JNRxKI2' />
             </VStack>
 
             
@@ -139,11 +140,11 @@ function TestimonialsCarousel() {
                     fontWeight={"700"}
                     letterSpacing={'2px'}
                     color={'#5EA98B'}
-                    >Amy Amrou</Text>
+                    >Adarsh</Text>
 
                     <Text 
                     fontWeight={"600"}
-                    >Director</Text>
+                    >Teacher</Text>
 
                     <Text
                     width={'90%'}
@@ -152,7 +153,7 @@ function TestimonialsCarousel() {
                     letterSpacing={'1px'}
 
                     >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, magnam fuga iusto doloremque odio cumque?
+                  I love knowing exactly where my food comes from and supporting local farmers who put care into their crops.
                     </Text>
 
                 </VStack>
@@ -200,7 +201,7 @@ function TestimonialsCarousel() {
                     fontWeight={"700"}
                     letterSpacing={'2px'}
                     color={'#5EA98B'}
-                    >Amy Amrou</Text>
+                    >Adarsh</Text>
 
                     <Text 
                     fontWeight={"600"}

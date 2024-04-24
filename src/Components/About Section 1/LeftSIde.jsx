@@ -79,8 +79,8 @@ function LeftSIde() {
             letterSpacing={'1px'}  
             width={['100%' , '80%' , '80%' , '80%' , '80%']} 
             >
-              Duis eu libero erat. Nam elementum turpis tortor, ac mattis quam faucibus eget. Vestibulum ante ipsum
-              primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec sapien ut velit ultrices porta.
+              Healthy leaves are the lifeline of plants, vital for photosynthesis and the production of oxygen, sustaining life on our planet.
+At our farmer's market, we prioritize cultivating and promoting the growth of healthy leaves, recognizing their crucial role in supporting biodiversity and ecological balance.
             </Text>
           </HStack>
         </VStack>

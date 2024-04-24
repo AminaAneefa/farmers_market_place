@@ -49,7 +49,7 @@ function CouponCode() {
             display={'grid'}
             placeItems={'center'}
             >
-            Orga15
+            Amina15
             </Text>
 
             <Text>

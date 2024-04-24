@@ -25,8 +25,7 @@ function Section3() {
               textAlign={"center"}
               marginTop={"1rem"}
             >
-              Dorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              In our Farmers Market Place app, explore a vibrant selection of fresh fruits and vegetables sourced directly from local farms. Discover a bounty of seasonal produce, from crisp apples to tender greens, all at your fingertips."
             </Text>
           </HStack>
         </VStack>

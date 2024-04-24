@@ -12,7 +12,7 @@ function LowerFooter() {
       >
 
         <HStack>
-            <Text>Orgik  © 2022. All Rights Reserved.</Text>
+            <Text>CEK  © 2024. All Rights Reserved.</Text>
         </HStack>
 
       </HStack>

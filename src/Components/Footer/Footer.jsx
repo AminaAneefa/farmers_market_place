@@ -5,7 +5,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import logo from "./Footer-Logo.png";
+
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
@@ -52,21 +52,7 @@ function Footer() {
               gap={"20px"}
               paddingLeft={["20px", "0px", "20px", "0px", "0px"]}
             >
-              {/* Footer Image Logo */}
-              <HStack
-                justifyContent={"center"}
-                alignItems={"center"}
-                width={["100%", "100%", "100%", "100%", "10%"]}
-                marginTop={["10px", "10px", "10px", "10px", "10px"]}
-              >
-                <Image
-                  src={logo}
-                  alt="logo"
-                  width={"100px"}
-                  height={"100px"}
-                  objectFit={"contain"}
-                />
-              </HStack>
+              
 
               {/* Footer Top Items */}
               <HStack
@@ -93,7 +79,7 @@ function Footer() {
                     <FaLocationDot color="#5EA98B" />
                   </Stack>
                   <Text width={"70%"}>
-                    No: 58 A, East Madison Street, Baltimore, MD, USA 4508.
+                    College of Engineering Karunagappally,Kollam,India
                   </Text>
                 </HStack>
 
@@ -110,7 +96,7 @@ function Footer() {
                     <IoMdCall color="#5EA98B" />
                   </Stack>
                   <Text className="text-4xl max-[500px]:text-2xl font-semibold">
-                    +123-456-7890
+                    +917594890153
                   </Text>
                 </HStack>
 

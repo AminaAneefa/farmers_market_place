@@ -50,13 +50,13 @@ function Hero() {
           ]}
         >
           <h1 className="text-2xl max-md:text-xl max-[500px]:text-lg  tracking-widest font-normal">
-            Fresh & Organically Grown
+            For God's own Country
           </h1>
           <h1 className="text-4xl max-md:text-3xl max-[500px]:text-2xl font-medium tracking-wider mt-4 text-[#5EA98B]">
-            FLOURISHED VEGGIES
+            FARMER'S MARKET PLACE
           </h1>
           <h1 className="text-4xl max-md:text-3xl max-[500px]:text-2xl font-light tracking-widest mt-4 ">
-            Save Upto <span className="font-medium italic">20% off</span>
+             <span className="font-medium italic"></span>
           </h1>
 
           <Button

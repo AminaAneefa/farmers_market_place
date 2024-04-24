@@ -77,8 +77,8 @@ function RightSide() {
           letterSpacing={'1px'}  
           width={['100%' , '80%' , '80%' , '80%' , '80%']} 
           >
-            Duis eu libero erat. Nam elementum turpis tortor, ac mattis quam faucibus eget. Vestibulum ante ipsum
-            primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec sapien ut velit ultrices porta.
+           By nurturing healthy leaves, farmers contribute to the preservation of our environment, safeguarding not just crops but entire ecosystems.
+Healthy leaves signify robust plants, resilient to pests and diseases, ensuring sustainable agriculture practices for generations to come.
           </Text>
         </HStack>
       </VStack>

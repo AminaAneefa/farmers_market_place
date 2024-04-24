@@ -216,11 +216,11 @@ function ContactSection() {
                 >Email</Text>
 
                 <Text>
-                    info@example.com
+                    abhirami@gmail.com
                 </Text>
 
                 <Text>
-                    support@example.com
+                    supportcek@example.com
                 </Text>
 
 
@@ -262,11 +262,11 @@ function ContactSection() {
                 >Address</Text>
 
                 <Text>
-                    No. 123, Street Name, City,
+                    College of Engineering Karunagappally
                 </Text>
 
                 <Text>
-                    Baltmore, MD, USA 4508
+                    Kollam Kerala,India
                 </Text>
 
 

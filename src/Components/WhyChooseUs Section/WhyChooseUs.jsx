@@ -40,7 +40,7 @@ function WhyChooseUs() {
         textAlign={"center"}
         marginTop={"0.8rem"}
         >
-        Arcu non odio euismod lacinia sectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       Choose us for farm fresh produce directly from local growers ,ensuring quality, variety, and convenience.
         </Text>
 
       </VStack>
@@ -74,11 +74,11 @@ function WhyChooseUs() {
       marginTop={['20px' , '20px' , '20px'  , '0px']}
       >
 
-         <WhyChooseUsDetails detailsImage={fresh} DetailsTitle={"Healthy Fresh Eatbales"} DetailsText={"Arcu non odio euismod lacinia sectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
+         <WhyChooseUsDetails detailsImage={fresh} DetailsTitle={"Healthy Fresh Eatbales"} DetailsText={""} />
 
-        <WhyChooseUsDetails detailsImage={organic} DetailsTitle={"Authorized Organic Farm"} DetailsText={"Accumsan in nisl nisi scelerisq amet sed due eu ultrices vitae auctor. Felis eget velit aliquet sagittis amet lor."} />
+        <WhyChooseUsDetails detailsImage={organic} DetailsTitle={"Authorized Organic Farm"} DetailsText={""} />
 
-        <WhyChooseUsDetails detailsImage={chemicalFree} DetailsTitle={"100% Non Chemical Fertilizers"} DetailsText={"Est lorem ipsum dolor sit amet sit smret consectetur. Arcu risus quis varius quam quisque id diam vel tellus."} />
+        <WhyChooseUsDetails detailsImage={chemicalFree} DetailsTitle={"100% Non Chemical Fertilizers"} DetailsText={""} />
 
       </VStack>
 

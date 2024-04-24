@@ -4,7 +4,7 @@ import ShopLink from "./ShopLink";
 import PagesLink from "./PagesLink";
 import "./Navbar.css";
 
-import logo from "../../assets/Logo.png";
+
 import SearchBox from "./SearchBox";
 import DrawerMenu from "./DrawerMenu";
 import { useEffect, useState } from "react";
@@ -83,15 +83,7 @@ function Navbar() {
           <DrawerMenu />
         </HStack>
 
-        {/* Logo */}
-        <HStack marginY={["10px", "10px", "10px", "10px"]}>
-          <Image
-            cursor={"pointer"}
-            src={logo}
-            alt="logo"
-            boxSize={["60px", "60px", "60px", "100px"]}
-          />
-        </HStack>
+        
 
         {/* Right Links */}
         <HStack

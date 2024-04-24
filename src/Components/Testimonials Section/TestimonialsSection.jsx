@@ -46,9 +46,7 @@ function TestimonialsSection() {
             marginTop={"1rem"}
             letterSpacing={"1px"}
           >
-            Urna et pharetra pharetra massa massa ultricies mi. Cras fermentum
-            odio eu feugiat pretium. Pellentesque massa placerat duis ultric
-            lectus
+            
           </Text>
 
 
