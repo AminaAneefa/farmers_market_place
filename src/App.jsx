@@ -17,6 +17,7 @@ import Footer from './Components/Footer/Footer';
 import ForgetPassword from './Pages/ForgetPassword';
 import SignUp from './Pages/SignUp';
 import Favourite from './Pages/Favourite';
+import Product from './Pages/Product';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path='/signUp' element={<SignUp />} />
             {/* <Route path='/cart' element={<Cart />} /> */}
             <Route  path='/favourite' element={<Favourite />} />
+            <Route path='/addproducts' element={<Product />} />
           </Routes>
           <Toaster />
           <Footer />
