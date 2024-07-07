@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Box, Button, Input, Text, VStack, HStack, Image } from '@chakra-ui/react';
+import { Box, Button, Input, Text, VStack, HStack, Image, useToast } from '@chakra-ui/react';
 import { db } from '../firebase';
-import { collection, addDoc, getDocs } from 'firebase/firestore';
-import { CartContext } from '../Components/Cart Section/CartContext'; // Import the CartContext
+import { collection, addDoc, getDocs, deleteDoc, doc } from 'firebase/firestore';
+import { CartContext } from '../Components/Cart Section/CartContext';
 
 function Product() {
   const [products, setProducts] = useState([]);
@@ -10,7 +10,8 @@ function Product() {
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
-  const { addToCart } = useContext(CartContext); // Use the CartContext
+  const toast = useToast();
+  const { addToCart } = useContext(CartContext);
 
   // Fetch products from Firestore
   useEffect(() => {
@@ -31,14 +32,37 @@ function Product() {
   const addProduct = async () => {
     try {
       const newProduct = { name, description, price, image };
-      await addDoc(collection(db, 'products'), newProduct);
-      setProducts([...products, newProduct]);
+      const docRef = await addDoc(collection(db, 'products'), newProduct);
+      setProducts([...products, { id: docRef.id, ...newProduct }]);
       setName('');
       setDescription('');
       setPrice('');
       setImage('');
+      toast({
+        title: "Product added.",
+        description: "The product has been added successfully.",
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+      });
     } catch (error) {
       console.error("Error adding product: ", error);
+    }
+  };
+
+  const deleteProduct = async (id) => {
+    try {
+      await deleteDoc(doc(db, 'products', id));
+      setProducts(products.filter(product => product.id !== id));
+      toast({
+        title: "Product deleted.",
+        description: "The product has been deleted successfully.",
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+      });
+    } catch (error) {
+      console.error("Error deleting product: ", error);
     }
   };
 
@@ -88,13 +112,16 @@ function Product() {
                   <Text fontSize="xl" fontWeight="600">{product.name}</Text>
                   <Text>{product.description}</Text>
                   <Text>${product.price}</Text>
-                  <Button onClick={() => addToCart(product)} bg="#5EA98B" color="white" _hover={{ bg: "#FEE4D7", color: "black" }}>
-                    Add to Cart
-                  </Button>
                 </Box>
                 <Box>
                   <Image src={product.image} alt={product.name} borderRadius="10px" width="100px" height="100px" objectFit="cover" />
                 </Box>
+                <Button onClick={() => addToCart(product)} bg="#5EA98B" color="white" _hover={{ bg: "#FEE4D7", color: "black" }}>
+                  Add to Cart
+                </Button>
+                <Button onClick={() => deleteProduct(product.id)} bg="#FF6347" color="white" _hover={{ bg: "#FF4500" }}>
+                  Delete
+                </Button>
               </HStack>
             </Box>
           ))}
