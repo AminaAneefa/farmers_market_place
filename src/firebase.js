@@ -9,8 +9,8 @@ const firebaseConfig = {
   projectId: "farmers-market-f221a",
   storageBucket: "farmers-market-f221a.appspot.com",
   messagingSenderId: "294560178151",
-  appId: "1:294560178151:web:a03bf4768eeacecd24e742",
-  measurementId: "G-0MVCX573YR"
+ appId: "1:294560178151:web:a03bf4768eeacecd24e742",
+ measurementId: "G-0MVCX573YR"
 };
 
 const app = initializeApp(firebaseConfig);
