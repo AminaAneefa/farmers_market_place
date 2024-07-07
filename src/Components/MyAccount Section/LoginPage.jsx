@@ -1,7 +1,8 @@
 import { Box, Button, HStack, Input, InputGroup, InputRightElement, Text, VStack } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { auth } from '../../firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 function LoginPage() {
   const [show, setShow] = useState(false);
@@ -11,22 +12,15 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const handleClick = () => setShow(!show);
+
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/login', {
-        email: email,
-        pass: password
-      }, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        withCredentials: true  // if you're dealing with cookies
-      });
-      if (response.data.status === 200) {
-        navigate('/dashboard'); // Redirect to dashboard or another page
-      }
+      await signInWithEmailAndPassword(auth, email, password);
+      navigate('/'); // Redirect to dashboard or another page
     } catch (error) {
-      setError('Invalid email')}}
+      setError(error.message);
+    }
+  };
 
   return (
     <Box width={"100%"} height={"100%"} marginTop={"5rem"}>

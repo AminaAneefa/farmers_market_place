@@ -16,6 +16,7 @@
     "@reduxjs/toolkit": "^2.0.1",
     "axios": "^1.7.2",
     "carousel": "^0.0.3",
+    "firebase": "^10.12.3",
     "framer-motion": "^10.17.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
