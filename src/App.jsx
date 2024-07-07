@@ -17,6 +17,7 @@ import Footer from './Components/Footer/Footer';
 import ForgetPassword from './Pages/ForgetPassword';
 import SignUp from './Pages/SignUp';
 import Favourite from './Pages/Favourite';
+import Cart from './Components/Cart Section/Cart';
 import Product from './Pages/Product';
 import { Toaster } from 'react-hot-toast';
 
@@ -44,6 +45,7 @@ function App() {
             {/* <Route path='/cart' element={<Cart />} /> */}
             <Route  path='/favourite' element={<Favourite />} />
             <Route path='/addproducts' element={<Product />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
           <Toaster />
           <Footer />
