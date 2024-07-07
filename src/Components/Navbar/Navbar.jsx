@@ -73,6 +73,7 @@ function Navbar() {
           <ShopLink />
           <PagesLink />
           <Link to={"/contact"}>CONTACT</Link>
+          <Link to={"/addproducts"}>PRODUCT</Link>
         </HStack>
 
         <HStack
