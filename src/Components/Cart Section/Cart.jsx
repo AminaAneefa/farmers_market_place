@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Box, VStack, HStack, Image, Text, Button } from '@chakra-ui/react';
+import { Box, Button, Text, VStack, HStack, Image } from '@chakra-ui/react';
 import { CartContext } from './CartContext';
 import { Link } from 'react-router-dom';
 
